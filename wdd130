@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Bismarck D. Quintero | WDD 130</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="wwr/">Rafting Site</a>
+        <a href="wwr/site-plan-rafting.html">Rafting Site Plan</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Bismarck Quintero | WDD 130</h1>
+      <img src="https://www.facebook.com/516271865/posts/10160873735761866/?mibextid=rS40aB7S9Ucbxw6v" alt="Hello, my name is Bismarck Quintero" width="200">
+      <p>Hello! My name is Bismarck, I am so excited to be learning HTML, I work for a company called doTERRA, I live in Lehi Utah, I love my family, my wife Sara, my sons, Bismarck Jr. & Hevel and my daugther Gretche </p>
+      <p>I enjoy rafting, mostly easy in Provo River, I tried some much more advance last year and we smashed outselves against the rocks, that was so brutal, since then I haven't been able to raft, but I plan at least to go once this summer </p>
+    </main>
+    <footer>
+      <p>©️2024 Bismarck Quintero</p>
