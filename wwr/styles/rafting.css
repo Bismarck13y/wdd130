@@ -1,73 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+/* Global Reset and Body Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 50px;
     padding: 0;
+    background-color: #f0f0f0; /* Light background for the whole site */
+
 }
 
+/* Header Styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #333;
     color: white;
     padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow for a slight elevation */
 }
 
 header .logo img {
-    max-width: 100px;
+    max-width: 150px;
 }
 
-nav ul {
-    list-style: none;
+header nav {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
+    display: flex
 }
 
-nav ul li {
+header nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Hero Section Styles */
 .hero {
     position: relative;
     text-align: center;
-}
-
-.hero img {
-    width: 100%; /* Make the hero image larger */
-    height: auto;
+    background-color: #0077cc;
+    color: white;
+    padding: 100px 20px;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-article {
-    padding: 20px;
+.hero p {
+    font-size: 1.2rem;
 }
 
-article img {
-    max-width: 30%; /* Make the happy client2 image smaller */
+/* History Section Styles (using Flexbox) */
+.history {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.history img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Specific adjustment for 'happy-client2.jpg' */
+.history img[src="images/happy-client2.jpg"] {
+    max-width: 25% !important; /* Adjust the percentage as needed */
+    height: auto !important; /* Maintain aspect ratio */
+}
+
+.history p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.adventures {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.adventures-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.adventures figure {
+    margin: 0;
+}
+
+.adventures img {
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+.adventures figcaption {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
 }
+.history img[src="images/happy-client2.jpg"] {
+    max-width: 25% !important; /* Adjust the percentage as needed */
+    height: auto !important; /* Maintain aspect ratio */
+}
+

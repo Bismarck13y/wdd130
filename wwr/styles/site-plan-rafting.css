@@ -13,7 +13,7 @@ body {
 }
 
 :root {
-    --primary-color: #3F88C5;
+    --primary-color: #0068bd;
     --secondary-color: #937567;
     --accent1-color: #66BE37;
     --accent2-color: #F2B3FF;
@@ -21,7 +21,7 @@ body {
     --heading-font: 'Rock Salt', cursive;
     --paragraph-font: 'Times New Roman', serif;
 
-    --nav-background-color: #3F88C5;
+    --nav-background-color: #0068bd;
     --nav-link-color: #F2B3FF;
     --nav-hover-link-color: #F2B3FF;
     --nav-hover-background-color: #937567;

@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        /* Additional styles for the Adventures section */
+        .adventures {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        .adventures-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .adventures figure {
+            margin: 0;
+        }
+        
+        .adventures img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .adventures figcaption {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,15 +71,33 @@
     
             <section>
                 <h2>Adventure Awaits You!</h2>
-                <img src="https://th.bing.com/th/id/OIP.tSghYNmK2Jb-t3Ew4l6iXQHaE8?w=262&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="group white water rafting">
-                <img src="https://th.bing.com/th/id/OIP.eBPfS9hVmBXoZa-2CxVFJQHaEK?w=324&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="people white water rafting">
-                <img src="https://th.bing.com/th/id/OIP.QVSj1NKspB5ZXN1YgqgZzgHaFS?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="men and women white water rafting">
-                <img src="https://th.bing.com/th/id/OIP.QSfWabaGexP_ay56CLJh4gHaFS?w=237&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="action shot of white water rafting">
-                <img src="https://th.bing.com/th/id/OIP.YqwnKG8murwT_O9QO75RewHaE7?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="smooth wave in white water rafting">
+                <div class="adventures">
+                    <div class="adventures-container">
+                        <figure>
+                            <img src="https://th.bing.com/th/id/OIP.tSghYNmK2Jb-t3Ew4l6iXQHaE8?w=262&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="group white water rafting">
+                            <figcaption>Los Dientes del Diablo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://th.bing.com/th/id/OIP.eBPfS9hVmBXoZa-2CxVFJQHaEK?w=324&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="people white water rafting">
+                            <figcaption>Big Mallard</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://th.bing.com/th/id/OIP.QVSj1NKspB5ZXN1YgqgZzgHaFS?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="men and women white water rafting">
+                            <figcaption>Half Day Adventure</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://th.bing.com/th/id/OIP.QSfWabaGexP_ay56CLJh4gHaFS?w=237&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="action shot of white water rafting">
+                            <figcaption>White Water Rush</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://th.bing.com/th/id/OIP.YqwnKG8murwT_O9QO75RewHaE7?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="smooth wave in white water rafting">
+                            <figcaption>Rapid Challenge</figcaption>
+                        </figure>
+                    </div>
+                </div>
             </section>
         </article>
     </main>
-    
 
     <footer>
         <p>©2024 Bismarck Quintero 🦆 White Water Rafting 🦆</p>
@@ -61,7 +112,6 @@
               <img src="images/Instagram-logo.webp" alt="Instagram">
             </a>
           </nav>
-        </nav>
     </footer>
 </body>
 </html>
