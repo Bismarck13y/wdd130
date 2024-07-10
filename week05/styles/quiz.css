@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    font-size: 1.2em; /* Increase the base font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make body take full viewport height */
+}
+
+h1 {
+    font-size: 2em; /* Increase the font size of the heading */
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px; /* Increase the spacing between form groups */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width: 100%;
+    margin-bottom: 10px; /* Increase the margin below labels */
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px; /* Increase the padding for inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em; /* Increase the font size inside form elements */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px; /* Increase the padding for the button */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em; /* Increase the font size of the button text */
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
