@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact 2 Guys Rafting for your next adventure. Find our address, phone number, email, and location map here.">
+    <title>Contact - 2 Guys Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/brownrafting img.jpeg" alt="White water rafting logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p>Address: 123 Rafting Way, Adventure Town, CO 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@2guysrafting.com</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3037.6099130601015!2d-111.89550182428856!3d40.41749167143958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1720821697245!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profiles">
+                <figure>
+                    <img src="https://st2.depositphotos.com/1095795/11855/i/600/depositphotos_118552056-stock-photo-happy-man-rafting.jpg" alt="Happy employee John, Rafting Guide">
+                    <figcaption>John, Rafting Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://www.riverdancers.com/site-files/uploads/2011/03/smiling_dana.jpg" alt="Happy employee Dana, Adventure Coordinator">
+                    <figcaption>Dana, Adventure Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://thumbs.dreamstime.com/z/happy-young-adult-woman-natural-make-up-long-wavy-brown-hair-blue-sea-beach-outdoor-portrait-happy-young-adult-woman-323426591.jpg?w=992" alt="Happy employee Lisa, Customer Support">
+                    <figcaption>Lisa, Customer Support</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Get in Touch</h2>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <fieldset>
+                    <legend>Purpose of the Message:</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="General Inquiry" required> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Reservation Question" required> Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Website Suggestion" required> Website Suggestion
+                    </label>
+                </fieldset>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <label>
+                    <input type="checkbox" name="newsletter" value="Subscribe"> Please subscribe me to the monthly newsletter
+                </label>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2024 Bismarck Quintero 🦆 White Water Rafting 🦆</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/Facebook-logo.webp" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/Linkedin-logo.webp" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/Instagram-logo.webp" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
 /* Global Reset and Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 50px;
     padding: 0;
     background-color: #f0f0f0; /* Light background for the whole site */
-
 }
 
 /* Header Styles */
@@ -31,7 +28,7 @@ header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex
+    display: flex;
 }
 
 header nav ul li {
@@ -85,16 +82,11 @@ header nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Specific adjustment for 'happy-client2.jpg' */
-.history img[src="images/happy-client2.jpg"] {
-    max-width: 25% !important; /* Adjust the percentage as needed */
-    height: auto !important; /* Maintain aspect ratio */
-}
-
 .history p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
 .adventures {
     padding: 50px 20px;
     background-color: #f0f0f0;
@@ -105,10 +97,6 @@ header nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-}
-
-.adventures figure {
-    margin: 0;
 }
 
 .adventures img {
@@ -124,8 +112,47 @@ header nav ul li a:hover {
     font-size: 1.1rem;
     color: #333;
 }
-.history img[src="images/happy-client2.jpg"] {
-    max-width: 25% !important; /* Adjust the percentage as needed */
-    height: auto !important; /* Maintain aspect ratio */
+
+/* Contact Form Section Styles */
+.contact-form-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
+.contact-form-section h2 {
+    font-size: 2.5rem; /* Increase the font size */
+}
+
+.contact-form-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form-section form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Adjust label font size */
+}
+
+.contact-form-section form input,
+.contact-form-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2rem; /* Adjust input and textarea font size */
+}
+
+.contact-form-section form fieldset {
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Adjust fieldset font size */
+}
+
+.contact-form-section form button {
+    padding: 12px 24px;
+    font-size: 1.2rem; /* Adjust button font size */
+}
