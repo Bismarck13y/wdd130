@@ -1,0 +1,158 @@
+/* Global Reset and Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background for the whole site */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: steelblue;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow for a slight elevation */
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: steelblue;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    text-align: center;
+    background-color: #0077cc;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* History Section Styles (using Flexbox) */
+.history {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.history img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.history p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.adventures {
+    padding: 50px 20px;
+    background-color: steelblue; /*fofo*/
+    text-align: center;
+}
+
+.adventures-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.adventures img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.adventures figcaption {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Contact Form Section Styles */
+.contact-form-section {
+    padding: 50px 20px;
+    background-color: silver; 
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    font-size: 2.5rem; /* Increase the font size */
+}
+
+.contact-form-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: steelblue; 
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form-section form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Adjust label font size */
+}
+
+.contact-form-section form input,
+.contact-form-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2rem; /* Adjust input and textarea font size */
+}
+
+.contact-form-section form fieldset {
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Adjust fieldset font size */
+}
+
+.contact-form-section form button {
+    padding: 12px 24px;
+    font-size: 1.2rem; /* Adjust button font size */
+}
