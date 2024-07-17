@@ -48,66 +48,51 @@ header nav ul li a:hover {
     background-color: #555;
 }
 
-/* Hero Section Styles */
-.hero {
-    position: relative;
-    text-align: center;
-    background-color: #0077cc;
-    color: white;
-    padding: 100px 20px;
+/* Main Styles */
+main {
+    padding: 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
+/* Company Info Section */
+.company-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.map-container {
+    margin-top: 20px;
 }
 
-/* History Section Styles (using Flexbox) */
-.history {
+/* Employee Profiles Section */
+.employee-profiles {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.employee-profiles .profiles {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
 }
 
-.history img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.history p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-.adventures {
-    padding: 50px 20px;
-    background-color: steelblue; /*fofo*/
+.employee-profiles figure {
     text-align: center;
 }
 
-.adventures-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+.employee-profiles img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.adventures img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.adventures figcaption {
+.employee-profiles figcaption {
     margin-top: 10px;
     font-size: 1.1rem;
     color: #333;
@@ -121,38 +106,43 @@ header nav ul li a:hover {
 }
 
 .contact-form-section h2 {
-    font-size: 2.5rem; /* Increase the font size */
+    font-size: 3rem; /* Increased font size for heading */
 }
 
 .contact-form-section form {
-    max-width: 600px;
+    max-width: 700px; /* Increased max-width */
     margin: 0 auto;
     background-color: steelblue; 
-    padding: 40px;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px; /* Increased padding */
 }
 
 .contact-form-section form label {
+    font-size: 1.5rem; /* Increased font size for labels */
     display: block;
     margin-bottom: 10px;
-    font-size: 1.2rem; /* Adjust label font size */
+    color: #fff; /* Ensure label text color contrasts with background */
 }
 
 .contact-form-section form input,
 .contact-form-section form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 1.2rem; /* Adjust input and textarea font size */
-}
-
-.contact-form-section form fieldset {
+    padding: 15px; /* Increased padding for inputs and textarea */
     margin-bottom: 20px;
-    font-size: 1.2rem; /* Adjust fieldset font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Increased font size for inputs and textarea */
 }
 
 .contact-form-section form button {
-    padding: 12px 24px;
-    font-size: 1.2rem; /* Adjust button font size */
+    padding: 15px 30px; /* Increased padding for button */
+    font-size: 1.5rem; /* Increased font size for button */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-section form button:hover {
+    background-color: #555;
 }
