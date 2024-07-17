@@ -1,0 +1,84 @@
+/* General styles for trips page */
+.trip-descriptions {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+}
+
+.trip {
+    border: 3px solid #ddd;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.trip:hover {
+    transform: translateY(-10px);
+}
+
+.trip img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid #ddd;
+    border-radius: 16px 16px 0 0;
+}
+
+.trip h3 {
+    padding: 30px;
+    margin: 0;
+    font-size: 2.2rem;
+    background-color: #f9f9f9;
+    border-bottom: 3px solid #ddd;
+    border-radius: 0 0 16px 16px;
+}
+
+.trip p {
+    padding: 30px;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.trip-table {
+    margin-top: 60px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.trip-table th, .trip-table td {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 3px solid #ddd;
+    font-size: 2rem;
+}
+
+.trip-table th {
+    background-color: #f9f9f9;
+}
+
+.trip-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 2.2rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
