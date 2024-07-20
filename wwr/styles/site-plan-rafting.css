@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+:root {
+    --primary-color: #003366; 
+    --secondary-color: #8B5E3C; 
+    --accent1-color: #4CAF50;
+    --accent2-color: #D1A6D6; 
+    --nav-background-color: #003366; 
+    --nav-link-color: #FFFFFF; 
+    --nav-hover-link-color: #D1A6D6;
+    --nav-hover-background-color: #8B5E3C; 
+}
+
 body {
-    font-family: var(times);
+    font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    color: var(--primary-color); /* Ensure body text color has good contrast */
+    background-color: #F9F9F9; /* Light background for better readability */
 }
 
 .rock-salt-regular {
@@ -12,20 +25,6 @@ body {
     font-style: normal;
 }
 
-:root {
-    --primary-color: #0068bd;
-    --secondary-color: #937567;
-    --accent1-color: #66BE37;
-    --accent2-color: #F2B3FF;
-
-    --heading-font: 'Rock Salt', cursive;
-    --paragraph-font: 'Times New Roman', serif;
-
-    --nav-background-color: #0068bd;
-    --nav-link-color: #F2B3FF;
-    --nav-hover-link-color: #F2B3FF;
-    --nav-hover-background-color: #937567;
-}
 .primary {
     color: var(--primary-color);
 }
@@ -41,9 +40,12 @@ body {
 .accent2 {
     color: var(--accent2-color);
 }
+
 nav {
     background-color: var(--nav-background-color);
     padding: 10px;
+    display: flex;
+    font-size: 1.2rem;
 }
 
 nav ul {
@@ -69,21 +71,21 @@ nav ul li a:hover {
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
 }
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(times);
-	color: var(primary);
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
+
 header {
     padding: 20px;
     background-color: var(--accent1-color);
+    color: var(--primary-color); /* Ensure text in header has good contrast */
 }
-p{
+
+p {
     padding: 25px;
-}
-nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
-    display: flex;
+    font-family: var(--paragraph-font);
 }
 
 nav a {

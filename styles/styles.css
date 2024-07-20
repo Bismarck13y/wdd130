@@ -1,9 +1,11 @@
+/* Universal Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,6 +16,7 @@ body {
   text-align: center;
 }
 
+/* Header */
 header, main, footer {
   width: 100%;
   max-width: 1200px;
@@ -38,6 +41,11 @@ nav a {
   font-weight: 700;
 }
 
+nav a:hover {
+  background-color: darkblue;
+}
+
+/* Main Content */
 h1 {
   color: steelblue;
   margin: 20px 0;
@@ -56,6 +64,7 @@ main .content {
 main .text {
   flex: 1;
   padding-left: 20px;
+  width: 50%; /* Ensures text takes half of the content area */
 }
 
 main img {
@@ -70,19 +79,10 @@ p {
   padding: 10px;
 }
 
-div {
-  box-sizing: border-box;
-  width: 400px;
-  margin: 10px auto;
-  border: 1px solid #000000;
-  padding: 15px;
-  background-color: #fff;
-  color: #000;
-}
-
+/* Aside Section */
 aside {
   width: 100%;
-  max-width: 40rem; 
+  max-width: 40rem;
   margin: 1rem auto;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
@@ -102,12 +102,42 @@ aside {
   margin-right: 1rem;
 }
 
-footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
+aside h2 {
+  margin-bottom: 1rem;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 20px;
+  border-top: 1px solid #000;
+  margin-top: 15px;
+  background-color: steelblue; /* Set background color to blue */
+  color: white; /* Set text color to white */
+}
+
+footer p {
+  margin: 0;
+}
+
+.sociallinks {
+  display: flex;
+  gap: 10px; /* Space between icons */
+}
+
+.sociallinks a {
+  display: inline-block;
+}
+
+.sociallinks img {
+  width: 32px; /* Increase the size of the icons */
+  height: auto;
+}
+
+/* Box Class */
 .box {
   margin: 1rem auto;
   border: 1px solid rgba(0,0,0,.1);
@@ -115,13 +145,4 @@ footer {
   background-color: #F0f0ff;
   color: #937567;
   max-width: 400px;
-}
-
-aside h2 {
-  margin-bottom: 1rem;
-}
-main .text {
-  flex: 1;
-  padding-left: 20px;
-  width: 50%; 
 }

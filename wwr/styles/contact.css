@@ -101,8 +101,8 @@ main {
 /* Contact Form Section Styles */
 .contact-form-section {
     padding: 50px 20px;
-    background-color: silver; 
-    text-align: center;
+    background-color: silver;
+    text-align: left;
 }
 
 .contact-form-section h2 {
@@ -112,13 +112,14 @@ main {
 .contact-form-section form {
     max-width: 700px; /* Increased max-width */
     margin: 0 auto;
-    background-color: steelblue; 
-    padding: 30px; /* Increased padding */
+    background-color: steelblue;
+    padding: 50px; /* Increased padding */
 }
 
 .contact-form-section form label {
-    font-size: 1.5rem; /* Increased font size for labels */
-    display: block;
+    font-size: 1rem; /* Increased font size for labels */
+    display: flex;
+    justify-content: flex-start;
     margin-bottom: 10px;
     color: #fff; /* Ensure label text color contrasts with background */
 }
@@ -130,7 +131,7 @@ main {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.2rem; /* Increased font size for inputs and textarea */
+    font-size: 1.2em; /* Increased font size for inputs and textarea */
 }
 
 .contact-form-section form button {
@@ -146,3 +147,17 @@ main {
 .contact-form-section form button:hover {
     background-color: #555;
 }
+
+/* Styles for radio buttons and their labels */
+.contact-form-section fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact-form-section fieldset legend {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
