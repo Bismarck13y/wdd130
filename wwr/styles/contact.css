@@ -11,7 +11,10 @@ header {
     background-color: #333;
     color: steelblue;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow for a slight elevation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for a slight elevation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .logo img {
@@ -53,19 +56,6 @@ main {
     padding: 20px;
 }
 
-/* Company Info Section */
-.company-info {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.map-container {
-    margin-top: 20px;
-}
-
 /* Employee Profiles Section */
 .employee-profiles {
     background-color: #fff;
@@ -78,6 +68,7 @@ main {
 .employee-profiles .profiles {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .employee-profiles figure {
@@ -98,28 +89,56 @@ main {
     color: #333;
 }
 
-/* Contact Form Section Styles */
+/* Contact Info and Form Section */
+.contact-info-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between sections */
+    margin-bottom: 20px;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Adjust width as needed */
+    flex: 1;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* Contact Form Styles */
 .contact-form-section {
-    padding: 50px 20px;
     background-color: silver;
-    text-align: left;
+    padding: 20px; /* Adjusted padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
 .contact-form-section h2 {
-    font-size: 3rem; /* Increased font size for heading */
+    font-size: 1.5rem; /* Reduced font size for heading */
+    color: #333;
+    margin-bottom: 1rem;
 }
 
 .contact-form-section form {
-    max-width: 700px; /* Increased max-width */
+    max-width: 100%;
     margin: 0 auto;
     background-color: steelblue;
-    padding: 50px; /* Increased padding */
+    padding: 20px; /* Adjusted padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form-section form label {
-    font-size: 1rem; /* Increased font size for labels */
+    font-size: 0.9rem; /* Adjusted font size for labels */
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 10px;
     color: #fff; /* Ensure label text color contrasts with background */
 }
@@ -148,16 +167,33 @@ main {
     background-color: #555;
 }
 
-/* Styles for radio buttons and their labels */
-.contact-form-section fieldset {
-    border: none;
-    padding: 0;
+/* Styles for Radio Buttons and Labels */
+.contact-form-section .radio-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 
-.contact-form-section fieldset legend {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+.contact-form-section .radio-group label {
+    display: flex;
+    align-items: first baseline;
+    font-size: 1rem;
     color: #fff;
+    margin-bottom: 10px;
 }
 
+.contact-form-section .radio-group input {
+    margin-right: 10px;
+}
+
+/* Map Container */
+.map-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    max-width: 100%;
+    height: 300px; /* Adjust height as needed */
+    border: 0;
+}
