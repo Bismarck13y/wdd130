@@ -73,7 +73,7 @@ header nav ul li a:hover {
         }
         
         .adventures figcaption {
-            margin-top: 10px;
+            margin-top: 12px;
             font-size: 1rem;
             color: #333;
         }
@@ -134,7 +134,7 @@ header nav ul li a:hover {
 /* Footer Styles */
 footer {
     padding: 20px 30px;
-    background-color: #333;
+    background-color: steelblue;
     color: white;
     text-align: center;
 }
