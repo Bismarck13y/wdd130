@@ -6,16 +6,37 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     background-color: #333;
     color: white;
     padding: 10px 20px;
+
 }
 
+ 
+
+header .logo {
+
+    grid-column: 1 / 2;
+    
+
+}
+
+ 
+
 header .logo img {
+
     max-width: 100px;
+
+}
+header nav {
+
+    grid-column: 2 / 3;
+    justify-self: end;
+
 }
 
 nav ul {

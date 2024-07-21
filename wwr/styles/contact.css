@@ -17,6 +17,10 @@ header {
     align-items: center;
 }
 
+header .logo {
+    margin-left: 120px; /* Add margin to move the logo off the edge */
+}
+
 header .logo img {
     max-width: 150px;
 }
@@ -103,7 +107,7 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Adjust width as needed */
+    max-width: 45%; /* Adjust width as needed */
     flex: 1;
 }
 
@@ -117,6 +121,7 @@ main {
     padding: 20px; /* Adjusted padding */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 45%; /* Adjust width as needed */
     flex: 1;
 }
 
@@ -146,16 +151,16 @@ main {
 .contact-form-section form input,
 .contact-form-section form textarea {
     width: 100%;
-    padding: 15px; /* Increased padding for inputs and textarea */
+    padding: 10px; /* Reduced padding for inputs and textarea */
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.2em; /* Increased font size for inputs and textarea */
+    font-size: 1rem; /* Reduced font size for inputs and textarea */
 }
 
 .contact-form-section form button {
-    padding: 15px 30px; /* Increased padding for button */
-    font-size: 1.5rem; /* Increased font size for button */
+    padding: 10px 20px; /* Reduced padding for button */
+    font-size: 1rem; /* Reduced font size for button */
     background-color: #333;
     color: #fff;
     border: none;
@@ -168,22 +173,32 @@ main {
 }
 
 /* Styles for Radio Buttons and Labels */
-.contact-form-section .radio-group {
+contact-form-section .radio-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .contact-form-section .radio-group label {
     display: flex;
-    align-items: first baseline;
+    align-items: center;
     font-size: 1rem;
     color: #fff;
     margin-bottom: 10px;
 }
 
 .contact-form-section .radio-group input {
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Newsletter Styles */
+.contact-form-section .newsletter-label {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Set text color to white */
 }
 
 /* Map Container */
