@@ -1,116 +1,304 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #8b5e3c;
+  --accent1-color: #4caf50;
+  --accent2-color: #d1a6d6;
+  --nav-background-color: #4caf50;
+  --nav-link-color: #4caf50;
+  --nav-hover-link-color: #d1a6d6;
+  --nav-hover-background-color: #8b5e3c;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    font-size: 18px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-size: 18px;
 }
 
-/* Header Styles */
-header {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem 30%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  nav ul {
+    flex-direction: column;
     align-items: center;
-    background-color: var(--primary-color); /* Updated to blue */
-    color: white;
-    padding: 10px 20px;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
 }
 
-header .logo {
-    grid-column: 1 / 2;    
-}
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem;
+  }
 
-header .logo img {
-    max-width: 100px;
-}
+  .logo img {
+    max-height: 40px;
+  }
 
-header nav {
-    grid-column: 2 / 3;
-    justify-self: end;
-}
+  nav ul li {
+    margin-top: 0.5rem;
+  }
 
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2rem;
+  nav ul li a {
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
 }
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
 /* Hero Section Styles */
 .hero {
-    position: relative;
-    text-align: center;
-    background-color: var(--primary-color); /* Updated to blue */
-    color: white;
-    padding: 150px 30px;
+  position: relative;
+  text-align: center;
+  background-color: var(--primary-color); /* Updated to blue */
+  color: white;
+  padding: 150px 30px;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    margin-bottom: 40px;
+  font-size: 4rem;
+  margin-bottom: 40px;
 }
 
 .hero p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 /* History Section Styles */
 .history {
-    padding: 100px 30px;
+  padding: 100px 30px;
 }
 
 .history p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /* Adventures Section Styles */
 .adventures {
-    padding: 50px 20px;
-    background-color: var(--accent2-color); /* Use accent color */
-    text-align: center;
+  padding: 50px 20px;
+  background-color: var(--accent2-color); /* Use accent color */
+  text-align: center;
 }
 
 .adventures-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .adventures figure {
-    margin: 0;
+  margin: 0;
 }
 
 .adventures img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .adventures figcaption {
-    margin-top: 12px;
-    font-size: 1rem;
-    color: var(--primary-color);
+  margin-top: 12px;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.parent-conatiner {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.main-box {
+  width: 80%;
+  height: 300px;
+  background-image: url("https://www.publicdomainpictures.net/pictures/180000/velka/whitewater-rafting.jpg");
+  border: 2px solid #ccc;
+  position: relative;
+}
+.hero-inner {
+  width: 60%;
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-box {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-box {
+    height: 150px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card button {
+    padding: 6px 12px;
+  }
 }
 
 /* Footer Styles */
 footer {
-    padding: 20px 30px;
-    background-color: var(--secondary-color);
-    color: white;
-    text-align: center;
+  padding: 20px 30px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sociallinks {
+  margin-left: 50px;
+}
+.sociallinksImage {
+  width: 27px !important;
 }
 
-footer .sociallinks {
-    margin-top: 10px;
+.History {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  text-align: center;
 }
 
-footer .sociallinks a {
-    margin-left: 20px;
+.Historyinner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Historyinner img {
+  width: 260px;
+}
+.adventures-top {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  .sociallinks {
+    margin-left: 0px;
+  }
+  .History {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .adventures-container {
+    flex-wrap: wrap;
+  }
 }
